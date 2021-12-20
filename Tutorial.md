@@ -34,9 +34,9 @@ _Um texto em itálico_
 
 ### Lista ordenada
 
-1. 1 item
+1. item 1
 2. item 2
-   2. item 2.1
+    2. item 2.1
 3. item 3 
 ### Lista não ordenada
 
