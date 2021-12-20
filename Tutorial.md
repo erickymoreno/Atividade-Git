@@ -36,7 +36,7 @@ _Um texto em itálico_
 
 1. 1 item
 2. 2 itens
-  2. 2.1 itens
+    2. 2.1 itens
 3. 2 itens 
 ### Lista não ordenada
 
