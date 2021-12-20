@@ -44,7 +44,7 @@ _Um texto em itálico_
 - 1 item
 - 2 itens
 - 3 itens
-    - 3.1 itens
+    - 3. itens
 
 ### Lista com checkbox
 
@@ -91,7 +91,7 @@ function getRandomArbitrary(min, max) {
 
 ## Imagens
 
-[imagem compass.uol](https://zenprospect-production.s3.amazonaws.com/uploads/pictures/619b494a29ef4a000123eefa/picture)
+[imagem compass.uol](https://compass.uol/img/arrow-manifest.png)
 
 ## Alinhamento ao centro
 
