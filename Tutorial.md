@@ -37,14 +37,14 @@ _Um texto em itálico_
 1. 1 item
 2. 2 itens
 3. 2 itens 
-    3.1 itens
+    3. itens
 
 ### Lista não ordenada
 
 - 1 item
 - 2 itens
 - 3 itens
-    - 3. itens
+    - 3. 3.1 itens
 
 ### Lista com checkbox
 
@@ -61,10 +61,10 @@ _Um texto em itálico_
 ## Códigos
 
 ### Uma linha de codigo 
-`\` console.log( "Olá, Mundo!" ) `\`
+` console.log( "Olá, Mundo!" ) `
 
 ### Bloco de código
-``` 
+```javascript 
 
 function getRandomArbitrary(min, max) {
     min = 1;
@@ -91,7 +91,7 @@ function getRandomArbitrary(min, max) {
 
 ## Imagens
 
-[imagem compass.uol](https://compass.uol/img/arrow-manifest.png)
+![imagem compass.uol](https://compass.uol/img/arrow-manifest.png)
 
 ## Alinhamento ao centro
 
