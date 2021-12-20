@@ -37,14 +37,14 @@ _Um texto em itálico_
 1. 1 item
 2. 2 itens
 3. 2 itens 
-    3. itens
+    3. 4 itens
 
 ### Lista não ordenada
 
 - 1 item
 - 2 itens
 - 3 itens
-    - 3. 3.1 itens
+    - 3.1 itens
 
 ### Lista com checkbox
 
