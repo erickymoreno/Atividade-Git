@@ -65,8 +65,6 @@ _Um texto em itálico_
 ```javascript 
 
 function getRandomArbitrary(min, max) {
-    min = 1;
-    max = 100;
     return Math.random() * (max - min) + min;
   }
 
@@ -75,7 +73,7 @@ function getRandomArbitrary(min, max) {
 ```
  ## Tabela
 
-| Name    | Data de Nascimento |
+| Nome    | Data de Nascimento |
 | ----    | ----------         |
 | João    | 12/02/1998         |
 | Maria   | 04/07/2000         |
@@ -85,7 +83,7 @@ function getRandomArbitrary(min, max) {
 
 ## Links
 
-[Totoria da microsoft de Markdown](https://docs.microsoft.com/pt-br/contribute/markdown-reference)
+[Tutorial da microsoft de Markdown](https://docs.microsoft.com/pt-br/contribute/markdown-reference)
 
 ## Imagens
 
