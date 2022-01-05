@@ -2,12 +2,12 @@ const conexao = require('../infraestrutura/conexao')
 const moment = require('moment')
 
 class Atendimento {
-    
-    adicona(atendimento, res){
-        
+
+    adicona(atendimento, res) {
+
         const dataCriacao = moment().format('YYYY-MM-DD HH:mm:ss')
         const data = moment(atendimento.data, 'DD/MM/YYYY').format('YYYY-MM-DD HH:mm:ss')
-        
+
         const dataEhValida = moment(data).isSameOrAfter(dataCriacao)
         const clienteEhValido = atendimento.cliente.length > 4
 
@@ -24,32 +24,32 @@ class Atendimento {
                 mensagem: 'O nome do cliente deve conter mais do que cinco letras'
             }
         ]
-        
-        
-        const erros = validacoes.filter(campo => ! campo.valido)
+
+
+        const erros = validacoes.filter(campo => !campo.valido)
         const existemErros = erros.length
 
-        if(existemErros){
+        if (existemErros) {
             res.status(400).json(erros)
         } else {
-        const atendimentoDatado = {...atendimento, dataCriacao, data}   
-        const sql = 'INSERT INTO atendimentos SET ?'
+            const atendimentoDatado = { ...atendimento, dataCriacao, data }
+            const sql = 'INSERT INTO atendimentos SET ?'
 
-        conexao.query(sql, atendimentoDatado, (erro, resultado)=>{
-            if(erro){
-                res.status(400).json(erro)
-            } else {
-                res.status(201).json(resultado)
-            }
-        })
-      }
+            conexao.query(sql, atendimentoDatado, (erro, resultado) => {
+                if (erro) {
+                    res.status(400).json(erro)
+                } else {
+                    res.status(201).json(resultado)
+                }
+            })
+        }
     }
 
-    lista(res){
+    lista(res) {
         const sql = 'SELECT * FROM  atendimentos'
 
         conexao.query(sql, (erro, resultado) => {
-            if(erro){
+            if (erro) {
                 res.satus(400).json(erro)
             } else {
                 res.status(200).json(resultado)
@@ -57,11 +57,24 @@ class Atendimento {
         })
     }
 
-    listaPorId(id, res){
+    listaPorId(id, res) {
         const sql = `SELECT * FROM atendimentos WHERE id = ${id}`
 
         conexao.query(sql, (erro, resultado) => {
-            if(erro){
+            if (erro) {
+                res.status(400).json(erro)
+            } else {
+                res.status(200).json(resultado)
+            }
+        })
+    }
+
+    atualizar(id, valores, res) {
+
+        const sql = `UPDATE Atendimentos SET ? WHERE id = ?`
+        conexao.query(sql, [valores, id], (erro, resultado) => {
+
+            if (erro) {
                 res.status(400).json(erro)
             } else {
                 res.status(200).json(resultado)

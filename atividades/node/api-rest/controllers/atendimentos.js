@@ -17,4 +17,12 @@ module.exports = app => {
         Atendimento.adicona(atendimentos, res)
        
     })
+
+    app.patch('/atendimentos/:id', (req, res) => {
+        
+        const id = parseInt(req.params.id)
+        const valores = req.body
+
+        Atendimento.atualizar(id, valores, res)
+    })
 }
