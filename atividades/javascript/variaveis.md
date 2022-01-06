@@ -1,10 +1,10 @@
 ![](https://www.luiztools.com.br/wp-content/uploads/2018/09/javascript.png)
 # <span style="color: #FFF700"> Guia de fundamentos em JavaScript </span>
 
-### Variaveis :astonished:
+### Variáveis :astonished:
 Uma variável é um espaço na memória do computador reservada para guardar temporariamente um determinado valor.
 
-#### Tipos de Variaveis :scream:
+#### Tipos de Variáveis :scream:
 Em JavaScript, temos três tipos de variáveis: var, let e const.
 
 ![imagem variaveis](https://miro.medium.com/max/724/1*sdWPymqzx1Hr6hXp1FfN_Q.png)
